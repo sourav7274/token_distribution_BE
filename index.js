@@ -9,7 +9,7 @@ const cookie  = require('cookie-parser')
 const app = express()
 const cors = require('cors')
 const corsOption = {
-    origin: "*",
+    origin: "https://token-distribution-fe.vercel.app",
     credentials:true,
     optionSuccessStatus: 200
 }
