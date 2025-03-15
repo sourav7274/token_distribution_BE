@@ -25,6 +25,11 @@ const makeToken = () =>{
     return crypto.randomBytes(8).toString('hex')
 }
 
+app.get("/",(res,res) =>{
+    res.json({message:"Testing"})
+})
+
+
 app.post('/claimToken', async (req,res) =>{
     const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
     const coolDOwn = 5*60*1000
