@@ -9,7 +9,7 @@ const cookie  = require('cookie-parser')
 const app = express()
 const cors = require('cors')
 const corsOption = {
-    origin: "http://localhost:5173",
+    origin: "*",
     credentials:true,
     optionSuccessStatus: 200
 }
