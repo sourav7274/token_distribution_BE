@@ -25,7 +25,7 @@ const makeToken = () =>{
     return crypto.randomBytes(8).toString('hex')
 }
 
-app.get("/",(res,res) =>{
+app.get("/",(req,res) =>{
     res.json({message:"Testing"})
 })
 
